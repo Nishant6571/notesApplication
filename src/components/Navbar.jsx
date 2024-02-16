@@ -1,5 +1,6 @@
 import React from "react";
-import { Flex, Box, Link, Heading } from "@chakra-ui/react";
+import { Flex, Box, Heading } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navbar = () => {
               color="white"
               _hover={{ textDecoration: "none", color: "gray.300" }}
               fontSize="x-large"
-              href="/"
+              to="/"
             >
               Home
             </Link>
@@ -30,7 +31,7 @@ const Navbar = () => {
               color="white"
               _hover={{ textDecoration: "none", color: "gray.300" }}
               fontSize="x-large"
-              href="/about"
+              to="/about"
             >
               About
             </Link>
@@ -40,7 +41,7 @@ const Navbar = () => {
               color="white"
               _hover={{ textDecoration: "none", color: "gray.300" }}
               fontSize="x-large"
-              href="/notes"
+              to="/notes"
             >
               Notes
             </Link>
@@ -50,7 +51,7 @@ const Navbar = () => {
               color="white"
               _hover={{ textDecoration: "none", color: "gray.300" }}
               fontSize="x-large"
-              href="/signup"
+              to="/signup"
             >
               Signup
             </Link>
@@ -60,7 +61,7 @@ const Navbar = () => {
               color="white"
               _hover={{ textDecoration: "none", color: "gray.300" }}
               fontSize="x-large"
-              href="/login"
+              to="/login"
             >
               Login
             </Link>
